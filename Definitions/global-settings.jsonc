@@ -19,7 +19,7 @@
       "managedIdentityLocation": "westeurope"
     },
     {
-      "pacSelector": "epac-prod",
+      "pacSelector": "IntermediateRoot",
       "cloud": "AzureCloud",
       "tenantId": "65efae52-744d-4a63-b81c-2b1b53bee5b5",
       "deploymentRootScope": "/providers/Microsoft.Management/managementGroups/IntermediateRoot",
