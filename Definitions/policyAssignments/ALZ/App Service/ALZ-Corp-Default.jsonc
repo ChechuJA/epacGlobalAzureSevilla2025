@@ -35,7 +35,7 @@
         "*": [
           {
             "roleDefinitionId": "/providers/microsoft.authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
-            "scope": "/subscriptions/f1327a6f-a5e0-46bb-b607-4cfc270cd44c" // Replace with your connectivity subscription Id
+            "scope": "/subscriptions/f1327a6f-a5e0-46bb-b607-4cfc270cd44c" // Replace with your connectivity subscription Id 
           }
         ]
       }
