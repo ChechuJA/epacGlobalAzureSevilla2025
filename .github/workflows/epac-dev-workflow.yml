@@ -36,7 +36,7 @@ jobs:
     uses: ./.github/workflows/deploy-policy.yml
     with:
       pacEnvironmentSelector: epac-dev
-      planGitHubEnvironment: PAC-DEV
+      planGitHubEnvironment: EPAC-DEV
       PAC_INPUT_FOLDER: ./Output
       PAC_DEFINITIONS_FOLDER: ./Definitions
     secrets: inherit
@@ -48,7 +48,7 @@ jobs:
     uses: ./.github/workflows/deploy-roles.yml
     with:
       pacEnvironmentSelector: epac-dev
-      planGitHubEnvironment: PAC-DEV
+      planGitHubEnvironment: EPAC-DEV
       PAC_INPUT_FOLDER: ./Output
       PAC_DEFINITIONS_FOLDER: ./Definitions
     secrets: inherit
