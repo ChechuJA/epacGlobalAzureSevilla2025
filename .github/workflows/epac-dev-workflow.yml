@@ -53,15 +53,15 @@ jobs:
       PAC_DEFINITIONS_FOLDER: ./Definitions
     secrets: inherit
 
-  tenantPlan:
-    name: Plan tenant
+  planProd:
+    name: Plan Prod
     needs: [deployPolicy, deployRoles]
     if: |
       always()
       && !contains(needs.*.result,'failure')
     uses: ./.github/workflows/plan.yml
     with:
-      pacEnvironmentSelector: tenant
+      pacEnvironmentSelector: IntermediateRoot
       planGitHubEnvironment: TENANT-PLAN
       PAC_OUTPUT_FOLDER: ./Output
       PAC_DEFINITIONS_FOLDER: ./Definitions
