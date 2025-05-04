@@ -61,7 +61,7 @@ jobs:
       && !contains(needs.*.result,'failure')
     uses: ./.github/workflows/plan.yml
     with:
-      pacEnvironmentSelector: IntermediateRoot
+      pacEnvironmentSelector: epac-prod
       planGitHubEnvironment: TENANT-PLAN
       PAC_OUTPUT_FOLDER: ./Output
       PAC_DEFINITIONS_FOLDER: ./Definitions

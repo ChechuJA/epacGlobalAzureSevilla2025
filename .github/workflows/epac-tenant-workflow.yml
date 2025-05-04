@@ -1,5 +1,5 @@
 # This pipeline is used to deploy Policies, Initiative definitions and Assignments into Azure.
-name: EPAC Tenant Workflow PROD
+name: EPAC Epac-Prod IntermediateRoot Workflow PROD
 
 on:
   pull_request:
@@ -20,34 +20,34 @@ permissions:
 
 jobs:
   plan:
-    name: Plan IntermediateRoot
+    name: Plan epac-prod IntermediateRoot
     uses: ./.github/workflows/plan.yml
     with:
-      pacEnvironmentSelector: IntermediateRoot # Nombre del entorno configurado en global-settings.jsonc
+      pacEnvironmentSelector: epac-prod # Nombre del entorno configurado en global-settings.jsonc
       planGitHubEnvironment: TENANT-PLAN # Nombre del entorno de GitHub
       PAC_OUTPUT_FOLDER: ./Output
       PAC_DEFINITIONS_FOLDER: ./Definitions
     secrets: inherit
 
   deployPolicy:
-    name: Deploy IntermediateRoot Policy Changes
+    name: Deploy epac-prod IntermediateRoot Policy Changes
     needs: plan
     if: needs.plan.outputs.deployPolicyChanges == 'yes' && github.ref == 'refs/heads/main'
     uses: ./.github/workflows/deploy-policy.yml
     with:
-      pacEnvironmentSelector: IntermediateRoot
+      pacEnvironmentSelector: epac-prod
       planGitHubEnvironment: TENANT-DEPLOY-POLICY
       PAC_INPUT_FOLDER: ./Output
       PAC_DEFINITIONS_FOLDER: ./Definitions
     secrets: inherit
 
   deployRoles:
-    name: Deploy IntermediateRoot Role Changes
+    name: Deploy epac-prod IntermediateRoot Role Changes
     needs: plan
     if: needs.plan.outputs.deployRoleChanges == 'yes' && github.ref == 'refs/heads/main'
     uses: ./.github/workflows/deploy-roles.yml
     with:
-      pacEnvironmentSelector: IntermediateRoot
+      pacEnvironmentSelector: epac-prod
       planGitHubEnvironment: TENANT-DEPLOY-ROLES
       PAC_INPUT_FOLDER: ./Output
       PAC_DEFINITIONS_FOLDER: ./Definitions
