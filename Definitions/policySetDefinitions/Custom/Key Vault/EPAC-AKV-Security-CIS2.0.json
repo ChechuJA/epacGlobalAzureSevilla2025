@@ -1,13 +1,13 @@
 {
-  "name": "Guardrails-AKV-Security-CIS2.0",
+  "name": "EPAC-AKV-Security-CIS2.0",
   "properties": {
     "policyType": "Custom",
-    "displayName": "Guardrails-AKV-Security-CIS2.0",
+    "displayName": "EPAC-AKV-Security-CIS2.0",
     "description": "This initiative groups all key vault policies defined by the SCC (CIS 2.0) to ensure compliance and security of their key vault.",
     "metadata": {
       "version": "1.0.0",
       "category": "Key Vault",
-      "createdBy": "chechu"
+      "createdBy": "JASL"
     },
     "parameters": {
       "effectAKVKeyExpirationDate": {
