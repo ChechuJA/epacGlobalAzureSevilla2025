@@ -30,7 +30,7 @@
       },
       "parameters": {
         "effectSTAMinTLSVersion": "Deny",
-        "tlsVersion": "1.2"
+        "tlsVersion": "TLS1_2"
       },
       "nonComplianceMessages": [
         {
