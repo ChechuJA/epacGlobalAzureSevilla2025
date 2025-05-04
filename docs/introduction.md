@@ -10,6 +10,12 @@ EPAC (Enterprise Policy as Code) is a framework designed to manage Azure policie
 ## Azure Resource Naming Rules
 When creating or assigning resources in Azure, it's important to follow the [Azure Resource Naming Rules](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules#microsoftauthorization). For example:
 - **Policy Assignments**: The `name` field is limited to 24 characters.
+- **Policy Definitions**: The `name` field must not exceed 64 characters.
 - **Other Resources**: Different resource types have their own naming restrictions.
 
-Make sure to review these rules to avoid deployment errors.
+### Best Practices for Naming
+- Use short, descriptive names that convey the purpose of the resource.
+- Avoid special characters and spaces in names.
+- Use consistent prefixes (e.g., `EPAC-`) to group related resources.
+
+Make sure to review these rules to avoid deployment errors and ensure compliance with Azure standards.

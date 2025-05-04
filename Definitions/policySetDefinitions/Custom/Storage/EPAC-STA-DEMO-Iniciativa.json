@@ -31,8 +31,8 @@
     },
     "policyDefinitions": [
       {
-        "policyDefinitionReferenceId": "EPAC-Politica-Storage accounts should be have minimal TLS version 1.2",
-        "policyDefinitionName": "EPAC-Politica-Storage accounts should be have minimal TLS version 1.2",
+        "policyDefinitionReferenceId": "EPAC-Politica-StorageMinTLSVersion",
+        "policyDefinitionName": "EPAC-Politica-StorageMinTLSVersion",
         "parameters": {
           "effect": {
             "value": "[parameters('effectSTAMinTLSVersion')]"

@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-definition-schema.json",
-  "name": "EPAC-Politica-Storage accounts should be have minimal TLS version 1.2",
+  "name": "EPAC-Politica-StorageMinTLSVersion",
   "properties": {
-    "displayName": "EPAC-Politica-Storage accounts should be have minimal TLS version 1.2",
+    "displayName": "EPAC-Politica-StorageMinTLSVersion",
     "policyType": "Custom",
     "mode": "Indexed",
     "description": "This policy enforce storage minimal tls version.",
