@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-assignment-schema.json",
+  "nodeName": "/Corp/",
+  "scope": {
+    "epac-dev": [
+      // DEV-Replace with your EPAC environment name and validate the management group listed below exists
+      "/providers/Microsoft.Management/managementGroups/epac-IntermediateRoot-caf3"
+    ],
+    "epac-prod": [
+      // PROD-Replace with your EPAC environment name and validate the management group listed below exists
+      "/providers/Microsoft.Management/managementGroups/IntermediateRoot"
+    ]
+  },
+  "children": [
+    {
+      "nodeName": "Storage/",
+      "assignment": {
+        "name": "EPAC-STA-DEMO-Asignacion",
+        "displayName": "EPAC-STA-DEMO-Asignacion-assignment-IntermediateRoot",
+        "description": "Esta asignacion esta creada para la Demostracion de la EPAC. Global Azure Sevilla 2025"
+      },
+      "metadata": {
+        "category": "Key Vault",
+        "createdBy": "JASL",
+        "assignedBy": "JASL"
+      },
+      "enforcementMode": "Default",
+      "definitionEntry": {
+        "policySetName": "EPAC-STA-DEMO-Iniciativa"
+      },
+      "parameters": {
+        "effectSTAMinTLSVersion": "Deny",
+        "tlsVersion": "TLS1_2"
+      },
+      "nonComplianceMessages": [
+        {
+          "message": "Non-compliance detected. The resource does not comply with the 'EPAC-AKV-assignment-IntermediateRoot' initiative. Please review the security policies recommended by CIS 2.0 and adjust the resource configuration accordingly."
+        }
+      ]
+    }
+  ]
+}

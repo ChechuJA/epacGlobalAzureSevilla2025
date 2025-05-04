@@ -15,20 +15,20 @@
     {
       "nodeName": "App Service/",
       "assignment": {
-        "name": "jasl-epac-Assign App",
-        "displayName": "jasl-epac-Assign App Configuration to disable public network access",
-        "description": "jasl-epac-Assign Disable public network access for App Configuration so that it isn't accessible over the public internet. This configuration helps protect them against data leakage risks. You can limit exposure of the your resources by creating private endpoints instead. Learn more at: https://aka.ms/appconfig/private-endpoint."
+        "name": "epac-Assign App",
+        "displayName": "epac-Assign App Configuration to disable public network access",
+        "description": "epac-Assign Disable public network access for App Configuration so that it isn't accessible over the public internet. This configuration helps protect them against data leakage risks. You can limit exposure of the your resources by creating private endpoints instead. Learn more at: https://aka.ms/appconfig/private-endpoint."
       },
       "definitionEntry": {
         "policyName": "73290fa2-dfa7-4bbb-945d-a5e23b75df2c",
-        "displayName": "JASL-Configure App Configuration to disable public network access"
+        "displayName": "EPAC-Configure App Configuration to disable public network access"
       },
       "parameters": {
         "effect": "Modify"
       },
       "nonComplianceMessages": [
         {
-          "message": "EPAC-JASLNONCOMPLIANCE.Configure App Configuration to disable public network access."
+          "message": "EPAC-NONCOMPLIANCE.Configure App Configuration to disable public network access."
         }
       ],
       "additionalRoleAssignments": {
