@@ -1,0 +1,242 @@
+{
+  "properties": {
+    "displayName": "Company-Policy-PLE-PrivateDNSZones",
+    "policyType": "Custom",
+    "description": "This policy will deploy Private DNS Zone Configs for any kind of Private Endpoint. Based on https://github.com/Azure/Enterprise-Scale/",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "Network"
+    },
+    "mode": "Indexed",
+    "parameters": {
+      "privateDnsZoneIds": {
+        "type": "array",
+        "metadata": {
+          "displayName": "Array of Private Dns Zone Id",
+          "description": "The list of private DNS zone resource Ids to deploy in a new private DNS zone group and link to the private endpoint. Most of the times this is just one value, but can enter up to five. Use {regionName} or {regionCode} tokens as replacement strings when applicable."
+        }
+      },
+      "privateLinkResourceType": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Private Link Resource Type",
+          "description": "The resource type for the private endpoint privateLinkServiceId property, i.e. 'Microsoft.Storage/storageAccounts'. The list is available at https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns#azure-services-dns-zone-configuration"
+        }
+      },
+      "privateEndpointGroupId": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Private Endpoint Group Id",
+          "description": "The groupId for the private endpoint, i.e. 'blob'. The list is available at https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns#azure-services-dns-zone-configuration"
+        }
+      },
+      "dnsZoneRegionCodes": {
+        "type": "object",
+        "defaultValue": {
+          "australiacentral": "acl",
+          "australiacentral2": "acl2",
+          "australiaeast": "ae",
+          "australiasoutheast": "ase",
+          "brazilsoutheast": "bse",
+          "brazilsouth": "brs",
+          "canadacentral": "cnc",
+          "canadaeast": "cne",
+          "centralindia": "inc",
+          "centralus": "cus",
+          "centraluseuap": "ccy",
+          "chilecentral": "clc",
+          "eastasia": "ea",
+          "eastus": "eus",
+          "eastus2": "eus2",
+          "eastus2euap": "ecy",
+          "francecentral": "frc",
+          "francesouth": "frs",
+          "germanynorth": "gn",
+          "germanywestcentral": "gwc",
+          "israelcentral": "ilc",
+          "italynorth": "itn",
+          "japaneast": "jpe",
+          "japanwest": "jpw",
+          "koreacentral": "krc",
+          "koreasouth": "krs",
+          "malaysiasouth": "mys",
+          "malaysiawest": "myw",
+          "mexicocentral": "mxc",
+          "newzealandnorth": "nzn",
+          "northcentralus": "ncus",
+          "northeurope": "ne",
+          "norwayeast": "nwe",
+          "norwaywest": "nww",
+          "polandcentral": "plc",
+          "qatarcentral": "qac",
+          "southafricanorth": "san",
+          "southafricawest": "saw",
+          "southcentralus": "scus",
+          "southeastasia": "sea",
+          "southindia": "ins",
+          "spaincentral": "spc",
+          "swedencentral": "sdc",
+          "swedensouth": "sds",
+          "switzerlandnorth": "szn",
+          "switzerlandwest": "szw",
+          "taiwannorth": "twn",
+          "uaecentral": "uac",
+          "uaenorth": "uan",
+          "uksouth": "uks",
+          "ukwest": "ukw",
+          "westcentralus": "wcus",
+          "westeurope": "we",
+          "westindia": "inw",
+          "westus": "wus",
+          "westus2": "wus2",
+          "westus3": "wus3"
+        },
+        "metadata": {
+          "displayName": "Region Codes mapping",
+          "description": "Mapping of region name to region code. Used to replace {regionCode} token used in zone parameters."
+        }
+      },
+      "apiVersions": {
+        "type": "object",
+        "defaultValue": {
+          "Microsoft.App/managedEnvironments": "2025-01-01",
+          "Microsoft.Kusto/clusters": "2024-04-13",
+          "Microsoft.RecoveryServices/vaults": "2025-01-01",
+          "Microsoft.Monitor/accounts": "2023-04-03"
+        },
+        "metadata": {
+          "displayName": "API versions mapping for resource type lookups",
+          "description": "Mapping of API version to resource type used when looking up for resource region for {regionCode} or {regionName} for scenarios that use regional privatelink zones."
+        }
+      },
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "DeployIfNotExists, AuditIfNotExists or Disabled the execution of the Policy"
+        },
+        "allowedValues": [
+          "DeployIfNotExists",
+          "AuditIfNotExists",
+          "Disabled"
+        ],
+        "defaultValue": "DeployIfNotExists"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Network/privateEndpoints"
+          },
+          {
+            "count": {
+              "field": "Microsoft.Network/privateEndpoints/privateLinkServiceConnections[*]",
+              "where": {
+                "allOf": [
+                  {
+                    "field": "Microsoft.Network/privateEndpoints/privateLinkServiceConnections[*].privateLinkServiceId",
+                    "contains": "[parameters('privateLinkResourceType')]"
+                  },
+                  {
+                    "field": "Microsoft.Network/privateEndpoints/privateLinkServiceConnections[*].groupIds[*]",
+                    "equals": "[parameters('privateEndpointGroupId')]"
+                  }
+                ]
+              }
+            },
+            "greaterOrEquals": 1
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]",
+        "details": {
+          "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups",
+          "evaluationDelay": "AfterProvisioningSuccess",
+          "deployment": {
+            "properties": {
+              "mode": "incremental",
+              "name": "parameters('privateLinkResourceType')",
+              "template": {
+                "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "privateDnsZoneIds": {
+                    "type": "array"
+                  },
+                  "dnsZoneRegionCodes": {
+                    "type": "object"
+                  },
+                  "apiVersions": {
+                    "type": "object"
+                  },
+                  "privateEndpointName": {
+                    "type": "string"
+                  },
+                  "location": {
+                    "type": "string"
+                  },
+                  "privateLinkServiceId": {
+                    "type": "array"
+                  },
+                  "privateLinkResourceType": {
+                    "type": "string"
+                  }
+                },
+                "resources": [
+                  {
+                    "condition": "[greater(length(parameters('privateDnsZoneIds')), 0)]",
+                    "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups",
+                    "apiVersion": "2020-03-01",
+                    "name": "[concat(parameters('privateEndpointName'), '/deployedByPolicy')]",
+                    "location": "[parameters('location')]",
+                    "properties": {
+                      "copy": [
+                        {
+                          "name": "privateDnsZoneConfigs",
+                          "count": "[length(parameters('privateDnsZoneIds'))]",
+                          "input": {
+                            "name": "[toLower(replace(if(contains(parameters('privateDnsZoneIds')[copyIndex('privateDnsZoneConfigs')], '{regionCode}'), replace(replace(last(split(replace(parameters('privateDnsZoneIds')[copyIndex('privateDnsZoneConfigs')], '{regionCode}', parameters('dnsZoneRegionCodes')[reference(parameters('privateLinkServiceId')[0], parameters('apiVersions')[parameters('privateLinkResourceType')], 'Full').location]), '/')), '.', '-'), '{regionCode}', parameters('dnsZoneRegionCodes')[reference(parameters('privateLinkServiceId')[0], parameters('apiVersions')[parameters('privateLinkResourceType')], 'Full').location]), if(contains(parameters('privateDnsZoneIds')[copyIndex('privateDnsZoneConfigs')], '{regionName}'), replace(last(split(parameters('privateDnsZoneIds')[copyIndex('privateDnsZoneConfigs')], '/')), '{regionName}', reference(parameters('privateLinkServiceId')[0], parameters('apiVersions')[parameters('privateLinkResourceType')], 'Full').location), replace(last(split(parameters('privateDnsZoneIds')[copyIndex('privateDnsZoneConfigs')], '/')), '.', '-'))), ' ', ''))]",
+                            "properties": {
+                              "privateDnsZoneId": "[toLower(replace(if(contains(parameters('privateDnsZoneIds')[copyIndex('privateDnsZoneConfigs')], '{regionCode}'), replace(parameters('privateDnsZoneIds')[copyIndex('privateDnsZoneConfigs')], '{regionCode}', parameters('dnsZoneRegionCodes')[reference(parameters('privateLinkServiceId')[0], parameters('apiVersions')[parameters('privateLinkResourceType')], 'Full').location]), if(contains(parameters('privateDnsZoneIds')[copyIndex('privateDnsZoneConfigs')], '{regionName}'), replace(parameters('privateDnsZoneIds')[copyIndex('privateDnsZoneConfigs')], '{regionName}', reference(parameters('privateLinkServiceId')[0], parameters('apiVersions')[parameters('privateLinkResourceType')], 'Full').location), parameters('privateDnsZoneIds')[copyIndex('privateDnsZoneConfigs')])), ' ', ''))]"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "privateDnsZoneIds": {
+                  "value": "[parameters('privateDnsZoneIds')]"
+                },
+                "dnsZoneRegionCodes": {
+                  "value": "[parameters('dnsZoneRegionCodes')]"
+                },
+                "apiVersions": {
+                  "value": "[parameters('apiVersions')]"
+                },
+                "privateEndpointName": {
+                  "value": "[field('name')]"
+                },
+                "location": {
+                  "value": "[field('location')]"
+                },
+                "privateLinkServiceId": {
+                  "value": "[field('Microsoft.Network/privateEndpoints/privateLinkServiceConnections[*].privateLinkServiceId')]"
+                },
+                "privateLinkResourceType": {
+                  "value": "[parameters('privateLinkResourceType')]"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "name": "ffb12c4c-fba8-4a19-925c-acdc19750217"
+}
