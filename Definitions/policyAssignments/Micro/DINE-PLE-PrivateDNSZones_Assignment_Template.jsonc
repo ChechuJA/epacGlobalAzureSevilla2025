@@ -15,7 +15,7 @@
     {
       "nodeName": "Microsoft/",
       "assignment": {
-        "name": "Guardrails-Deploy-PrivateDNSZones",
+        "name": "G-Deploy-PrivateDNSZones",
         "displayName": "Guardrails-Deploy-PrivateDNSZones",
         "description": "This policy initiative assignment ensures that private endpoints for Azure PaaS services are integrated with Azure Private DNS zones. Based on https://github.com/Azure/Enterprise-Scale/"
       },
