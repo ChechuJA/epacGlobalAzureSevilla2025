@@ -756,7 +756,7 @@
     "policyDefinitions": [
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-ACR",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureAcrPrivateDnsZoneIds')]"
@@ -775,7 +775,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-ApiManagement",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureApiManagementPrivateDnsZoneIds')]"
@@ -794,7 +794,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-AppConfig",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureAppConfigPrivateDnsZoneIds')]"
@@ -813,7 +813,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-AppServices",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureAppServicesPrivateDnsZoneIds')]"
@@ -832,7 +832,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Arc",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureArcPrivateDnsZoneIds')]"
@@ -851,7 +851,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Site-Recovery",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureAsrPrivateDnsZoneIds')]"
@@ -870,7 +870,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Site-Recovery-Backup",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureAsrBackupPrivateDnsZoneIds')]"
@@ -889,7 +889,7 @@
       },     
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Site-Recovery-BackupSec",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureAsrBackupSecPrivateDnsZoneIds')]"
@@ -908,7 +908,7 @@
       },             
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Attestation",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureAttestationPrivateDnsZoneIds')]"
@@ -927,7 +927,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Automation-DSCHybrid",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureAutomationDSCHybridPrivateDnsZoneIds')]"
@@ -946,7 +946,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Automation-Webhook",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureAutomationWebhookPrivateDnsZoneIds')]"
@@ -965,7 +965,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Batch-Account",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureBatchAccountPrivateDnsZoneIds')]"
@@ -984,7 +984,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Batch-NodeMgmt",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureBatchNodeMgmtPrivateDnsZoneIds')]"
@@ -1003,7 +1003,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-BotService-Bot",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureBotServiceBotPrivateDnsZoneIds')]"
@@ -1022,7 +1022,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-BotService-Token",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureBotServiceTokenPrivateDnsZoneIds')]"
@@ -1041,7 +1041,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-CognitiveSearch",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureCognitiveSearchPrivateDnsZoneIds')]"
@@ -1060,7 +1060,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-CognitiveServices",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureCognitiveServicesPrivateDnsZoneIds')]"
@@ -1079,7 +1079,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-ContainerApp",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureContainerAppPrivateDnsZoneIds')]"
@@ -1098,7 +1098,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Cosmos-Analytical",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureCosmosAnalyticalPrivateDnsZoneIds')]"
@@ -1117,7 +1117,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Cosmos-Cassandra",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureCosmosCassandraPrivateDnsZoneIds')]"
@@ -1136,7 +1136,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Cosmos-Gremlin",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureCosmosGremlinPrivateDnsZoneIds')]"
@@ -1155,7 +1155,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Cosmos-MongoDB",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureCosmosMongoPrivateDnsZoneIds')]"
@@ -1174,7 +1174,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Cosmos-PostgreSQL",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureCosmosPostgreSQLPrivateDnsZoneIds')]"
@@ -1193,7 +1193,7 @@
       },      
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Cosmos-SQL",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureCosmosSQLPrivateDnsZoneIds')]"
@@ -1212,7 +1212,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Cosmos-Table",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureCosmosTablePrivateDnsZoneIds')]"
@@ -1231,7 +1231,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-DataExplorer",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureDataExplorerPrivateDnsZoneIds')]"
@@ -1250,7 +1250,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-DataFactory",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureDataFactoryPrivateDnsZoneIds')]"
@@ -1269,7 +1269,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-DataFactory-Portal",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureDataFactoryPortalPrivateDnsZoneIds')]"
@@ -1288,7 +1288,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Databricks-UI-Api",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureDatabricksUIAPIPrivateDnsZoneIds')]"
@@ -1307,7 +1307,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Databricks-Browser-AuthN",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureDatabricksBrowserAuthPrivateDnsZoneIds')]"
@@ -1326,7 +1326,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-DeviceUpdate",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureDeviceUpdatePrivateDnsZoneIds')]"
@@ -1345,7 +1345,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-DigitalTwins",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureDigitalTwinsPrivateDnsZoneIds')]"
@@ -1364,7 +1364,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-DiskAccess",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureDiskAccessPrivateDnsZoneIds')]"
@@ -1383,7 +1383,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-DVHostPool",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureDVHostPoolPrivateDnsZoneIds')]"
@@ -1402,7 +1402,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-DVWorkspace-Feed",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureDVWorkspaceFeedPrivateDnsZoneIds')]"
@@ -1421,7 +1421,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-DVWorkspace-Global",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureDVWorkspaceGlobalPrivateDnsZoneIds')]"
@@ -1440,7 +1440,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-EventGridDomains",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureEventGridDomainsPrivateDnsZoneIds')]"
@@ -1459,7 +1459,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-EventGridNamespaces",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureEventGridNamespacesPrivateDnsZoneIds')]"
@@ -1478,7 +1478,7 @@
       },      
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-EventGridPartnerNamespaces",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureEventGridPartnerNamespacesPrivateDnsZoneIds')]"
@@ -1497,7 +1497,7 @@
       },      
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-EventGridTopics",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureEventGridTopicsPrivateDnsZoneIds')]"
@@ -1516,7 +1516,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-EventGridTopicSpaces",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureEventGridTopicSpacesPrivateDnsZoneIds')]"
@@ -1535,7 +1535,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-EventHubNamespace",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureEventHubNamespacePrivateDnsZoneIds')]"
@@ -1554,7 +1554,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-File-Sync",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureFileSyncPrivateDnsZoneIds')]"
@@ -1573,7 +1573,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-HealthDataServices-Workspace",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureHealthDataServicesWorkspacePrivateDnsZoneIds')]"
@@ -1592,7 +1592,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-HDInsight-Gateway",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureHDInsightGatewayPrivateDnsZoneIds')]"
@@ -1611,7 +1611,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-HDInsight-HeadNode",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureHDInsightHeadNodePrivateDnsZoneIds')]"
@@ -1630,7 +1630,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-IoTApps",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureIotAppsPrivateDnsZoneIds')]"
@@ -1649,7 +1649,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-IoTDps",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureIotDpsPrivateDnsZoneIds')]"
@@ -1668,7 +1668,7 @@
       },      
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-IoTHubs",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureIotHubsPrivateDnsZoneIds')]"
@@ -1687,7 +1687,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-KeyVaultManagedHSM",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureKeyVaultManagedHSMPrivateDnsZoneIds')]"
@@ -1706,7 +1706,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-KeyVault",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureKeyVaultPrivateDnsZoneIds')]"
@@ -1725,7 +1725,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-MachineLearningRegistry",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureMachineLearningRegistryPrivateDnsZoneIds')]"
@@ -1744,7 +1744,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-MachineLearningWorkspace",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureMachineLearningWorkspacePrivateDnsZoneIds')]"
@@ -1763,7 +1763,7 @@
       },      
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-ManagedGrafana",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureManagedGrafanaPrivateDnsZoneIds')]"
@@ -1782,7 +1782,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-ManagedPrometheus",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureManagedPrometheusPrivateDnsZoneIds')]"
@@ -1801,7 +1801,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-MariaDB",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureMariaDBPrivateDnsZoneIds')]"
@@ -1820,7 +1820,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-MediaServices-Key",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureMediaServicesKeyPrivateDnsZoneIds')]"
@@ -1839,7 +1839,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-MediaServices-Live",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureMediaServicesLivePrivateDnsZoneIds')]"
@@ -1858,7 +1858,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-MediaServices-Stream",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureMediaServicesStreamPrivateDnsZoneIds')]"
@@ -1877,7 +1877,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Migrate",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureMigratePrivateDnsZoneIds')]"
@@ -1896,7 +1896,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Migrate-Assessment",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureMigrateAssessmentPrivateDnsZoneIds')]"
@@ -1915,7 +1915,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-MasterSites",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureMigrateMasterSitesPrivateDnsZoneIds')]"
@@ -1934,7 +1934,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Monitor",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureMonitorPrivateDnsZoneIds')]"
@@ -1953,7 +1953,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-MySQL-Single",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureMySQLPrivateDnsZoneIds')]"
@@ -1972,7 +1972,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-MySQL-Flex",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureMySQLPrivateDnsZoneIds')]"
@@ -1991,7 +1991,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-PostgreSQL-Single",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azurePostgreSQLPrivateDnsZoneIds')]"
@@ -2010,7 +2010,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-PostgreSQL-Flex",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azurePostgreSQLPrivateDnsZoneIds')]"
@@ -2029,7 +2029,7 @@
       },      
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-PurView-Account",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azurePurViewAccountPrivateDnsZoneIds')]"
@@ -2048,7 +2048,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-PurView-Platform",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azurePurViewPlatformPrivateDnsZoneIds')]"
@@ -2066,7 +2066,7 @@
         "groupNames": []
       },      {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-PurView-Portal",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azurePurViewPortalPrivateDnsZoneIds')]"
@@ -2085,7 +2085,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-RedisCache",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureRedisCachePrivateDnsZoneIds')]"
@@ -2104,7 +2104,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-RedisCacheEnterprise",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureRedisCacheEnterprisePrivateDnsZoneIds')]"
@@ -2123,7 +2123,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Relay",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureRelayPrivateDnsZoneIds')]"
@@ -2142,7 +2142,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-ResourceManagement",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureResourceManagementPrivateDnsZoneIds')]"
@@ -2161,7 +2161,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-ServiceBusNamespace",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureServiceBusNamespacePrivateDnsZoneIds')]"
@@ -2180,7 +2180,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-SignalR",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureSignalRPrivateDnsZoneIds')]"
@@ -2199,7 +2199,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Storage-Blob",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureStorageBlobPrivateDnsZoneIds')]"
@@ -2218,7 +2218,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Storage-Blob-Sec",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureStorageBlobSecPrivateDnsZoneIds')]"
@@ -2237,7 +2237,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Storage-DFS",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureStorageDFSPrivateDnsZoneIds')]"
@@ -2256,7 +2256,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Storage-DFS-Sec",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureStorageDFSSecPrivateDnsZoneIds')]"
@@ -2275,7 +2275,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Storage-File",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureStorageFilePrivateDnsZoneIds')]"
@@ -2294,7 +2294,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Storage-Table",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureStorageTablePrivateDnsZoneIds')]"
@@ -2313,7 +2313,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Storage-DFS-Table-Sec",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureStorageTableSecPrivateDnsZoneIds')]"
@@ -2332,7 +2332,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Storage-Queue",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureStorageQueuePrivateDnsZoneIds')]"
@@ -2351,7 +2351,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Storage-Queue-Sec",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureStorageQueueSecPrivateDnsZoneIds')]"
@@ -2370,7 +2370,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Storage-StaticWeb",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureStorageStaticWebPrivateDnsZoneIds')]"
@@ -2389,7 +2389,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Storage-StaticWeb-Sec",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureStorageStaticWebSecPrivateDnsZoneIds')]"
@@ -2408,7 +2408,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-AzureSQL",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureSQLPrivateDnsZoneIds')]"
@@ -2427,7 +2427,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Synapse-Dev",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureSynapseDevPrivateDnsZoneIds')]"
@@ -2446,7 +2446,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Synapse-SQL-OnDemand",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureSynapseSQLODPrivateDnsZoneIds')]"
@@ -2465,7 +2465,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-Synapse-SQL",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureSynapseSQLPrivateDnsZoneIds')]"
@@ -2484,7 +2484,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-SynapseStudio",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureSynapseStudioPrivateDnsZoneIds')]"
@@ -2503,7 +2503,7 @@
       },
       {
         "policyDefinitionReferenceId": "DINE-Private-DNS-Azure-WebPubSub",
-        "policyDefinitionId": "ffb12c4c-fba8-4a19-925c-acdc19750217",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ffb12c4c-fba8-4a19-925c-acdc19750217",
         "parameters": {
           "privateDnsZoneIds": {
             "value": "[parameters('azureWebPubSubPrivateDnsZoneIds')]"
